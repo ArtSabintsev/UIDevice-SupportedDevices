@@ -36,13 +36,13 @@
     else if ([machineName isEqualToString:@"iPad3,4"]) deviceName = @"iPadFourthGen";       // iPad 4 Wi-Fi
     else if ([machineName isEqualToString:@"iPad3,5"]) deviceName = @"iPadFourthGen4G";     // iPad 4 GSM
     else if ([machineName isEqualToString:@"iPad3,6"]) deviceName = @"iPadFourthGen4G";     // iPad 4 GSM+CDMA
-    else if ([machineName isEqualToString:@"iPad4,1"]) deviceName = @"";                    // iPad Air Wi-Fi
-    else if ([machineName isEqualToString:@"iPad4,2"]) deviceName = @"";                    // iPad Air Cellular
+    else if ([machineName isEqualToString:@"iPad4,1"]) deviceName = @"iPadFourthGen4G";     // iPad Air Wi-Fi (SAME AS iPAD 4)
+    else if ([machineName isEqualToString:@"iPad4,2"]) deviceName = @"iPadFourthGen4G";     // iPad Air Cellular (SAME AS iPAD 4)
     else if ([machineName isEqualToString:@"iPad2,5"]) deviceName = @"iPadMini";            // iPad mini 1G Wi-Fi
     else if ([machineName isEqualToString:@"iPad2,6"]) deviceName = @"iPadMini4G";          // iPad mini 1G GSM
     else if ([machineName isEqualToString:@"iPad2,7"]) deviceName = @"iPadMini4G";          // iPad mini 1G GSM+CDMA
-    else if ([machineName isEqualToString:@"iPad4,4"]) deviceName = @"";                    // iPad mini 2G Wi-Fi
-    else if ([machineName isEqualToString:@"iPad4,5"]) deviceName = @"";                    // iPad mini 2G Cellular
+    else if ([machineName isEqualToString:@"iPad4,4"]) deviceName = @"iPadMini";            // iPad mini 2G Wi-Fi (SAME AS iPAD MINI 1)
+    else if ([machineName isEqualToString:@"iPad4,5"]) deviceName = @"iPadMini";            // iPad mini 2G Cellular (SAM AS iPAD MINI 1)
     else if ([machineName isEqualToString:@"iPod1,1"]) deviceName = @"iPod-touch";          // iPod touch 1G
     else if ([machineName isEqualToString:@"iPod2,1"]) deviceName = @"iPod-touch-with-mic"; // iPod touch 2G
     else if ([machineName isEqualToString:@"iPod3,1"]) deviceName = @"iPodTouchThirdGen";   // iPod touch 3G
