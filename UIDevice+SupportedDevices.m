@@ -15,12 +15,21 @@
     struct utsname systemInfo;
     uname(&systemInfo);
     
-   return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+}
+
++ (NSString *)simulatorNamePhone
+{
+    return @"iPhone Simulator";
+}
+
++ (NSString *)simulatorNamePad
+{
+    return @"iPad Simulator";
 }
 
 + (NSString *)supportedDeviceName
 {
-    
     NSString *deviceName = nil;
     NSString *machineName = [self machineName];
     
@@ -46,7 +55,7 @@
     else if ([machineName isEqualToString:@"iPod1,1"]) deviceName = @"iPod-touch";          // iPod touch 1G
     else if ([machineName isEqualToString:@"iPod2,1"]) deviceName = @"iPod-touch-with-mic"; // iPod touch 2G
     else if ([machineName isEqualToString:@"iPod3,1"]) deviceName = @"iPodTouchThirdGen";   // iPod touch 3G
-    else if ([machineName isEqualToString:@"iPod4,1"]) deviceName = @"iPodTouchourthGen";   // iPod touch 4G
+    else if ([machineName isEqualToString:@"iPod4,1"]) deviceName = @"iPodTouchourthGen";   // iPod touch 4G (Yes, it's 'ourthGen')
     else if ([machineName isEqualToString:@"iPod5,1"]) deviceName = @"iPodTouchFifthGen";   // iPod touch 5G
     else if ([machineName isEqualToString:@"iPhone1,1"]) deviceName = @"iPhone";            // iPhone 2G GSM
     else if ([machineName isEqualToString:@"iPhone1,2"]) deviceName = @"iPhone-3G";         // iPhone 3G GSM
@@ -61,8 +70,8 @@
     else if ([machineName isEqualToString:@"iPhone5,4"]) deviceName = @"iPhone5c";          // iPhone 5c Global
     else if ([machineName isEqualToString:@"iPhone6,1"]) deviceName = @"iPhone5s";          // iPhone 5s GSM
     else if ([machineName isEqualToString:@"iPhone6,2"]) deviceName = @"iPhone5s";          // iPhone 5s Global
-    else if ([machineName isEqualToString:@"i386"]) deviceName = @"iPhone Simulator";       // iPhone Simulator
-    else if ([machineName isEqualToString:@"x86_64"]) deviceName = @"iPad Simulator";       // iPad Simulator
+    else if ([machineName isEqualToString:@"i386"]) deviceName = [self simulatorNamePhone]; // iPhone Simulator
+    else if ([machineName isEqualToString:@"x86_64"]) deviceName = [self simulatorNamePad]; // iPad Simulator
     else deviceName = @"Unknown";
     
     return deviceName;

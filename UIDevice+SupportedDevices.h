@@ -10,6 +10,8 @@
 @interface UIDevice (SupportedDevices)
 
 + (NSString *)machineName;
++ (NSString *)simulatorNamePhone;
++ (NSString *)simulatorNamePad;
 + (NSString *)supportedDeviceName;
 
 @end
