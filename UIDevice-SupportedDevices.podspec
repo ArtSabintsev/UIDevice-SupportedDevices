@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "UIDevice-SupportedDevices"
   s.version      = "1.0.1"
-  s.summary      = "An Objective-C category on UIDevice that returns devices based on the supportedDevices key in the JSON results returned in an iTunes Lookup API call."
+  s.summary      = "A category on UIDevice that returns devices based on the the JSON results returned in an iTunes Lookup API call."
   s.homepage     = "https://github.com/ArtSabintsev/Harpy"
   s.platform     = :ios, '5.0'  
   s.source       = { :git => "https://github.com/ArtSabintsev/UIDevice-SupportedDevices.git", :tag => "1.0.1" }
