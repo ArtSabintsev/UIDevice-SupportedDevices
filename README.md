@@ -3,15 +3,18 @@
 ### About
 An Objective-C category on `UIDevice` that returns devices based on the *supportedDevices* key in the JSON results returned in an [iTunes Lookup API call](http://itunes.apple.com/lookup).
 
-### Changelog (v1.0.0)
-- First full release.
+### Changelog (v1.0.1)
+- Update iPhone 4**s** result to 4**S** to match iTunes lookup API results
 
 ### Installation Instructions
-Simply drop **UIDevice+SupportedDevices [.h|.m]** into your project, and reference `UIDevice+SupportedDevices.h` in the classes need access to the information it provides.
+```
+pod 'UIDevice-SupportedDevices'
+```
+
+or simply drop **UIDevice+SupportedDevices [.h|.m]** into your project, and reference `UIDevice+SupportedDevices.h` in the classes need access to the information it provides.
 
 ### The Methods
-There are only four methods in this class. All four methods are class methods.
-Also, please note that the term *supported device name*, in the descriptions below, refers to the valuesin the *supportedDevices* key in the JSON results returned in an [iTunes Lookup API call](http://itunes.apple.com/lookup). 
+There are only four class methods in this class. Please note that the term *supported device name*, in the descriptions below, refers to the values in the *supportedDevices* key in the JSON results returned in an [iTunes Lookup API call](http://itunes.apple.com/lookup). 
 
 Please [click here for an example](http://itunes.apple.com/lookup?id=611229001) to witnes, firsthand, what the *supportedDevices* key returns.
 
@@ -38,5 +41,5 @@ Please be aware of the following intricacies:
 ### Inspiration
 This category was born within [issue 35](https://github.com/ArtSabintsev/Harpy/issues/35) of the [Harpy](http://www.github.com/ArtSabintsev/Harpy) repository. The underlying idea and part of the research for building this category came from [Aaron Brager](http://www.github.com/getaaron). 
 
-### Created and maintained by
-- [Arthur Ariel Sabintsev](http://www.sabintsev.com/) 
+### Created and Maintained by
+[Arthur Ariel Sabintsev](http://www.sabintsev.com/) 
