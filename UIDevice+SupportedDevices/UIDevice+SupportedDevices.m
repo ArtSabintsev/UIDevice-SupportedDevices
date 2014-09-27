@@ -70,6 +70,8 @@
     else if ([machineName isEqualToString:@"iPhone5,4"]) deviceName = @"iPhone5c";          // iPhone 5c Global
     else if ([machineName isEqualToString:@"iPhone6,1"]) deviceName = @"iPhone5s";          // iPhone 5s GSM
     else if ([machineName isEqualToString:@"iPhone6,2"]) deviceName = @"iPhone5s";          // iPhone 5s Global
+    else if ([machineName isEqualToString:@"iPhone7,1"]) deviceName = @"iPhone6Plus";       // iPhone 6plus
+    else if ([machineName isEqualToString:@"iPhone7,2"]) deviceName = @"iPhone6";           // iPhone 6
     else if ([machineName isEqualToString:@"i386"]) deviceName = [self simulatorNamePhone]; // iPhone Simulator
     else if ([machineName isEqualToString:@"x86_64"]) deviceName = [self simulatorNamePad]; // iPad Simulator
     else deviceName = @"Unknown";
