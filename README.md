@@ -4,7 +4,7 @@
 An Objective-C category on `UIDevice` that returns devices based on the *supportedDevices* key in the JSON results returned in an [iTunes Lookup API call](http://itunes.apple.com/lookup).
 
 ### Changelog (v1.0.2)
-- Added Support for iPhonr 6 and 6+.
+- Added Support for iPhone 6 and 6+. See **Important Notes** section.
 
 ### Installation Instructions
 ```
