@@ -3,8 +3,8 @@
 ### About
 An Objective-C category on `UIDevice` that returns devices based on the *supportedDevices* key in the JSON results returned in an [iTunes Lookup API call](http://itunes.apple.com/lookup).
 
-### Changelog (v1.0.1)
-- Update iPhone 4**s** result to 4**S** to match iTunes lookup API results
+### Changelog (v1.0.2)
+- Added Support for iPhonr 6 and 6+.
 
 ### Installation Instructions
 ```
@@ -34,7 +34,8 @@ Please [click here for an example](http://itunes.apple.com/lookup?id=611229001) 
 ### Important Notes
 Please be aware of the following intricacies:
 
-- The fourth generation iPod is stored as iPodTouch**ourth**Gen.
+- The fourth generation iPod is stored as **iPodTouchourthGen**, without the **F** in Fourth.
+- The iPhone 6 and 6+ do not have a designation in the *supportedDevices* key, so I'm using the same one as the iPhone 5s, as it is the newest device of its class that has a designation.
 - The iPad Mini 2 does not have a designation in the *supportedDevices* key, so I'm using the same one as the iPad Mini 1, as it is the newest device of its class that has a designation.
 - The iPad Air 1 does not have a designation in the *supportedDevices* key, so I'm using the same one as the fourth generation iPad, as it is the newest device of its class that has a designation.
 
