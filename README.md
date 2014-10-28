@@ -1,10 +1,13 @@
 # UIDevice+SupportedDevices
 
+### Note
+I am no longer supporting this add-on, as Apple has stopped updating the `supportedKeys` hash in the JSON results of the iTunes Lookup API route.
+
 ### About
 An Objective-C category on `UIDevice` that returns devices based on the *supportedDevices* key in the JSON results returned in an [iTunes Lookup API call](http://itunes.apple.com/lookup).
 
-### Changelog (v1.0.2)
-- Added Support for iPhone 6 and 6+. See **Important Notes** section.
+### Changelog (v1.0.3)
+- Development halted.
 
 ### Installation Instructions
 ```
